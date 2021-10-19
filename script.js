@@ -10,7 +10,7 @@ function oblicz(){
 
 	if(cena!=NaN && cena!="" && cena!=" " && cena!=0){
 		var koszt = cena*litry;
-		koszt.toPrecision(2);
+		koszt = koszt.toPrecision(3);
 
 		document.getElementById('koszt').innerHTML = "koszt to <b>"+koszt+"zł</b>";
 	}
